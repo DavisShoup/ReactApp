@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(2, 0, 33) 0%, rgba(219,145,123,1) 100%, rgba(0,212,255,1) 100%);
+    font-family: 'Manrope', sans-serif;  
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.App {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(2, 0, 33) 0%, rgba(219,145,123,1) 100%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15em 5em 18em 10em;
+    grid-template-areas: 
+    "nav reviews rating analytics"
+    "nav reviews rating analytics"
+    "nav visit visit visit"
+    "nav visit visit visit"
+    "nav visit visit visit";
+    row-gap: 1.5em;
+    column-gap: 1.5em;
+}
+
+.Nav {
+    background-color: rgba(2, 0, 33, .3);
+    font-size: 24px;
+    grid-area: nav;
+    color: #d48c78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Reviews {
+    font-size: 20px;
+    background-color: rgba(2, 0, 33, .4);
+    color: #a46c64;
+    grid-area: reviews;
+}
+
+.Rating {
+    font-size: 20px;
+    background-color: rgba(2, 0, 33, .4);
+    color: #201430;
+    grid-area: rating;
+}
+
+.Analytics {
+    font-size: 20px;
+    background-color: rgba(2, 0, 33, .4);
+    color: #201430;
+    grid-area: analytics;
+}
+
+.Visitors {
+    font-size: 20px;
+    background-color: rgba(2, 0, 33, .4);
+    color: #201430;
+    grid-area: visit;
+}
+
+.info1, .info2, .info3 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Graph {
+    height: auto;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+
